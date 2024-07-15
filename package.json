@@ -1,6 +1,6 @@
 {
-  "name": "@fds-components/fds-gradient-slider",
-  "version": "1.0.9",
+  "name": "@fds-components-public/fds-gradient-slider",
+  "version": "1.0.1",
   "scripts": {
     "build": "npm run build:prepare && rollup -c",
     "devdoc": "npm run build:prepare && export SKIP_HTTPSERVER=true && export MAKE_DOC=true && rollup -c -w",
@@ -40,5 +40,11 @@
   "svelte": "./src/main.js",
   "dependencies": {
     "yootils": "^0.3.1"
-  }
+  },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/flyingdogsoftware/fds-gradient-slider"
+    },
+    "author": "Nicolay Mausz",
+    "license": "MIT"
 }
