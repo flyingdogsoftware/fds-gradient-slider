@@ -1,6 +1,6 @@
 {
   "name": "@fds-components-public/fds-gradient-slider",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "build": "npm run build:prepare && rollup -c",
     "devdoc": "npm run build:prepare && export SKIP_HTTPSERVER=true && export MAKE_DOC=true && rollup -c -w",
@@ -35,11 +35,11 @@
     "sirv-cli": "1.0.*",
     "sveld": "^0.10.2",
     "svelte": "3.*",
-    "svelte-dnd-action": "^0.9.11"
+    "svelte-dnd-action": "^0.9.11",
+    "yootils": "^0.3.1"
   },
   "svelte": "./src/main.js",
   "dependencies": {
-    "yootils": "^0.3.1"
   },
     "repository": {
       "type": "git",

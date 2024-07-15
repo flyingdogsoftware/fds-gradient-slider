@@ -133,7 +133,7 @@
 		const { left, right } = slider.getBoundingClientRect();
 		const parentWidth = right - left;
 		const leftHandleLeft = leftHandle.getBoundingClientRect().left;
-		const pxStart = clamp((leftHandleLeft + event.detail.dx) - left, 0, parentWidth - width);
+		const pxStart = clamp((leftHandleLeft + evt.detail.dx) - left, 0, parentWidth - width);
 		const pxEnd = clamp(pxStart + width, width, parentWidth);
 		const pStart = pxStart / parentWidth;
 		const pEnd = pxEnd / parentWidth;
