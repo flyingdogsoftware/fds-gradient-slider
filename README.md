@@ -10,7 +10,7 @@ npm run dev
 
 ## Installation as npm package
 ``` 
-npm i @fds-components/fds-gradient-slider
+npm i @fds-components-public/fds-gradient-slider
 ```
 
 ## Usage 
