@@ -38,12 +38,15 @@
 function onchangeTest(e) {
     console.log(e.detail)
 }
-
+function changeColor() {
+    document.getElementById("first").to_color="blue"
+}
     </script>
 <body>
+    <button onclick="changeColor()">Change Color</button>
 <h1>fds-gradient-slider</h1>
 <div class="container">
-       <fds-gradient-slider from_color="black" to_color="red" min="0" max="255" value="64;127" onchange="onchangeTest(event)" value_type="integer"></fds-gradient-slider>
+       <fds-gradient-slider from_color="black" to_color="red" min="0" max="255" value="64;127" onchange="onchangeTest(event)" value_type="integer" id="first"></fds-gradient-slider>
 </div>
      
 <div class="container">
