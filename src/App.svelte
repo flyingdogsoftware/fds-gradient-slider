@@ -59,7 +59,6 @@
 
         value=left+";"+right
         if (num_handles!=="two") value=""+left+""
-        host.dispatchEvent(new CustomEvent('change', {detail: {value:value}}))
     }
     function calcGradient() {
         gCSS="background: linear-gradient(to right, "+from_color+", "+to_color+");"
@@ -99,6 +98,8 @@
 			node.dispatchEvent(new CustomEvent('dragend', {
 				detail: { x, y }
 			}));
+			host.dispatchEvent(new CustomEvent('change', {detail: {value:value}}))
+
 			window.removeEventListener('mousemove', handleMousemove);
 			window.removeEventListener('mouseup', handleMouseup);
 			window.removeEventListener('touchmove', handleMousemove);

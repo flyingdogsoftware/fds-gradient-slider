@@ -36,7 +36,9 @@
     </style>
     <script>
 function onchangeTest(e) {
-    console.log(e.detail)
+    if (!e.detail.value) return
+    console.log(e.detail.value)
+
 }
 function changeColor() {
     document.getElementById("first").to_color="blue"
@@ -54,7 +56,7 @@ function changeColor() {
 </div>
 
 <div class="container">
-    <fds-gradient-slider from_color="black" to_color="blue" min="0.0" max="1.0" value="0.0;0.5" onchange="onchangeTest(event)" value_type="float"></fds-gradient-slider>
+    <fds-gradient-slider from_color="black" to_color="blue" min="0.0" max="1.0" value="0.0;1.0" onchange="onchangeTest(event)" value_type="float"  id="third"></fds-gradient-slider>
 </div>
 </body>
 
